@@ -17,4 +17,5 @@ INNER JOIN title_data ON title_data.tconst = title_writers.tconst
 WHERE title_data.numVotes > 1000 
 AND title_data.titleName IS NOT NULL
 AND title_data.genre LIKE '%comedy%'
+AND title_data.titleType = 'movie'
 -- ORDER BY crew_names.name;
