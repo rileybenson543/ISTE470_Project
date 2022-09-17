@@ -18,7 +18,7 @@ for line in file:
     if (dataArr[1] == "movie"):
         try:
             cursor.execute(
-                f'UPDATE title_ratings SET genre = "{dataArr[8]}", titleName = "{dataArr[2]}" WHERE tconst = "{dataArr[0]}"')
+                f'UPDATE title_ratings SET titleType = "{dataArr[1]}", genre = "{dataArr[8]}", titleName = "{dataArr[2]}" WHERE tconst = "{dataArr[0]}"')
         except Exception as e:
             print(dataArr)
             print(e)
